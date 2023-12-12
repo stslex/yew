@@ -1,74 +1,39 @@
-# Yew Trunk Template
+# Project Test Rust WASM for GitHub Portfolio
 
-This is a fairly minimal template for a Yew app that's built with [Trunk].
+![Rust](https://img.shields.io/badge/-Rust-black?logo=rust&style=flat-square&logoColor=orange)
+![Yew](https://img.shields.io/badge/-Yew-black?logo=yew&style=flat-square&logoColor=blue)
+![WASM](https://img.shields.io/badge/-WASM-black?logo=webassembly&style=flat-square&logoColor=4B32C3)
 
-## Usage
+This is a project aimed at testing Rust WebAssembly (WASM) for creating a GitHub portfolio.
 
-For a more thorough explanation of Trunk and its features, please head over to the [repository][trunk].
+The goal is to showcase my Rust programming skills and demonstrate the ability to build web applications using Yew, a modern Rust framework for creating web frontends.
 
-### Installation
+## Table of Contents
 
-If you don't already have it installed, it's time to install Rust: <https://www.rust-lang.org/tools/install>.
-The rest of this guide assumes a typical Rust installation which contains both `rustup` and Cargo.
+- [Rust](#rust)
+- [Yew](#yew)
+- [WASM](#wasm)
 
-To compile Rust to WASM, we need to have the `wasm32-unknown-unknown` target installed.
-If you don't already have it, install it with the following command:
+## Yew
 
-```bash
-rustup target add wasm32-unknown-unknown
-```
+Yew is a modern Rust framework for building web applications. It allows developers to write client-side web applications using Rust's strong type system and memory safety guarantees. Yew follows a component-based architecture similar to popular JavaScript frameworks like React or Vue.js.
 
-Now that we have our basics covered, it's time to install the star of the show: [Trunk].
-Simply run the following command to install it:
+With Yew, you can create reusable and composable components that encapsulate both the UI and the logic of your web application. Yew leverages Rust's ownership model to ensure efficient memory management and eliminate common bugs like null pointer exceptions and memory leaks.
 
-```bash
-cargo install trunk wasm-bindgen-cli
-```
+Yew also provides a virtual DOM implementation, which allows for efficient updates to the user interface by only modifying the parts of the DOM that have changed. This helps to optimize performance and improve the user experience.
 
-That's it, we're done!
+Overall, Yew enables developers to leverage the power of Rust to build fast, reliable, and secure web applications. It combines the benefits of Rust's safety and performance with the productivity and flexibility of a modern web framework.
 
-### Running
+## Rust
 
-```bash
-trunk serve
-```
+Rust is a systems programming language that focuses on safety, speed, and concurrency...
 
-Rebuilds the app whenever a change is detected and runs a local server to host it.
+## WASM
 
-There's also the `trunk watch` command which does the same thing but without hosting it.
+WebAssembly (WASM) is a binary instruction format that is designed to be executed in a web browser. It is a low-level virtual machine that allows developers to run code written in languages such as C, C++, and Rust on the web.
 
-### Release
+WASM provides a portable and efficient way to execute code in a web environment, enabling high-performance web applications. It is designed to be fast, secure, and compatible with existing web technologies.
 
-```bash
-trunk build --release
-```
+With WASM, developers can write code in languages other than JavaScript and compile it to a binary format that can be executed by the browser. This opens up new possibilities for web development, allowing developers to leverage the performance and capabilities of languages like Rust while still being able to integrate with existing web technologies.
 
-This builds the app in release mode similar to `cargo build --release`.
-You can also pass the `--release` flag to `trunk serve` if you need to get every last drop of performance.
-
-Unless overwritten, the output will be located in the `dist` directory.
-
-## Using this template
-
-There are a few things you have to adjust when adopting this template.
-
-### Remove example code
-
-The code in [src/main.rs](src/main.rs) specific to the example is limited to only the `view` method.
-There is, however, a fair bit of Sass in [index.scss](index.scss) you can remove.
-
-### Update metadata
-
-Update the `name`, `version`, `description` and `repository` fields in the [Cargo.toml](Cargo.toml) file.
-The [index.html](index.html) file also contains a `<title>` tag that needs updating.
-
-Finally, you should update this very `README` file to be about your app.
-
-### License
-
-The template ships with both the Apache and MIT license.
-If you don't want to have your app dual licensed, just remove one (or both) of the files and update the `license` field in `Cargo.toml`.
-
-There are two empty spaces in the MIT license you need to fill out: `` and `stslex <ilya977.077@gmail.com>`.
-
-[trunk]: https://github.com/thedodd/trunk
+Overall, WASM is a powerful technology that extends the capabilities of web browsers and enables developers to build complex and performant web applications using a wide range of programming languages.
